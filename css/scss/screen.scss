@@ -1,0 +1,82 @@
+/*
+Theme Name: Cronofy 2015
+Author: Joke De Winter Ltd
+Author URI: http://www.jokedewinter.co.uk
+Description: Custom WordPress theme for Cronofy.
+Version: 1.0
+Text Domain: cronofy
+*/
+
+/**
+ * ------------------------------------------------------------------------------------------------- 
+ * Base Styles
+ * -------------------------------------------------------------------------------------------------
+ */
+
+@import "init/_reset";
+@import "init/_colours";
+@import "init/_mixins";
+@import "init/_fonts";
+
+* { 
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box; 
+	-webkit-text-size-adjust: auto; 
+}
+
+html {
+	font-size: 62.5%;
+	overflow-x: hidden;
+}
+
+body { 
+	font-family: $font-body;
+	font-size: 16px; font-size: 1.6rem;
+	text-align: center; 
+	line-height: 1.5; 
+	background: $col-page;
+	color: $col-text; 	
+	overflow-x: hidden;
+}
+
+.hide {
+	/* A little bit of naughtyness */
+	display: none;
+}
+
+@import "base/_typography";
+@import "base/_links";
+@import "base/_images";
+@import "base/_forms";
+@import "base/_grid";
+
+/**
+ * ------------------------------------------------------------------------------------------------- 
+ * Layout Styles
+ * -------------------------------------------------------------------------------------------------
+ */
+
+.wrapper {
+	width: 90%;
+	//max-width: 64em;
+	margin: 0 auto;
+	text-align: left;
+}
+
+#masthead, #main, #colophon {
+	position: relative;
+	z-index: 100;
+}
+
+@import "layout/_header";
+@import "layout/_footer";
+
+/**
+ * ------------------------------------------------------------------------------------------------- 
+ * Module Styles
+ * -------------------------------------------------------------------------------------------------
+ */
+
+@import "modules/_companion-js";
+@import "modules/_companion-php";

@@ -1,0 +1,108 @@
+/**
+ * ------------------------------------------------------------------------------------------------- 
+ * Masthead
+ * -------------------------------------------------------------------------------------------------
+ */
+
+.jquery #masthead h1 { 
+		
+	display: inline-block;
+	color: $col-orangedark; /* keynote orange */
+}
+
+/**
+ * ------------------------------------------------------------------------------------------------- 
+ * General
+ * -------------------------------------------------------------------------------------------------
+ */
+
+.method {
+	float: left;
+	width: 100%;
+	margin: 0 0 3em 0;
+}
+
+.columns {
+	margin-bottom: 2em;
+
+	li { 
+		float: left; 
+		width: 50%;
+	}
+}
+
+/* Hide some sections as a default. Javascript will switch them back on when needed. */
+#search_result, #search_list, #search_letter, #search_name, #search_random { display: none; }
+
+@media screen and ( min-width: 500px ) and ( max-width: 649px ) { .columns li { width: 33%; } }
+@media screen and ( min-width: 650px ) and ( max-width: 799px ) { .columns li { width: 25%; } }
+@media screen and ( min-width: 800px ) and ( max-width: 849px ) { .columns li { width: 100%; } }
+@media screen and ( min-width: 1500px ) and ( max-width: 1999px ) { .columns li { width: 33%; } }
+@media screen and ( min-width: 2000px ) { .columns li { width: 25%; } }
+
+/**
+ * ------------------------------------------------------------------------------------------------- 
+ * Search result
+ * -------------------------------------------------------------------------------------------------
+ */
+
+#search_result {
+	margin-bottom: 2em;
+	padding: 2em 1em;
+	background: $col-light;
+
+	article {
+		width: 45%;
+		margin-right: 5%;
+		float: left;
+		
+		.columns li { width: 100%; }
+		p { padding-top: 0.5em; }
+	}	
+}
+
+@media screen and ( min-width: 800px ) and ( max-width: 1024px ) { #search_result article { width: 100%; } }
+
+/**
+ * ------------------------------------------------------------------------------------------------- 
+ * Search letter
+ * -------------------------------------------------------------------------------------------------
+ */
+
+#letters li {
+	float: left;
+	width: 20%;
+	text-align: center;
+}
+
+@media screen and ( min-width: 500px ) and ( max-width: 649px ) { #letters li { width: 16%; } }
+@media screen and ( min-width: 650px ) and ( max-width: 799px ) { #letters li { width: 11%; } }
+
+/**
+ * ------------------------------------------------------------------------------------------------- 
+ * Search name
+ * -------------------------------------------------------------------------------------------------
+ */
+
+#lookingfor li {
+	float: left;
+	padding: 0.3em;
+	border-bottom: none;
+	color: $col-border; 
+}
+
+#not_found { color: $col-required; }
+
+/**
+ * ------------------------------------------------------------------------------------------------- 
+ * Search method
+ * -------------------------------------------------------------------------------------------------
+ */
+
+.jquery nav ul {
+	margin: 0;
+	float: left;
+	display: block;
+}
+
+@media screen and ( min-width: 800px ) { .jquery nav ul { padding-right: 1em; } }

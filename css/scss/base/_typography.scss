@@ -1,0 +1,241 @@
+/**
+ * ------------------------------------------------------------------------------------------------- 
+ * Headings and paragraphs
+ * -------------------------------------------------------------------------------------------------
+ */
+
+h1, h3 {
+	font-family: $font-title;
+	//letter-spacing: 1px;
+}
+
+h1 { line-height: 1; }
+h2 { line-height: 1.5; }
+
+h4, h5, h6 { 
+	font-weight: bold;
+	line-height: 1.8;
+	letter-spacing: 1px;
+}
+
+h3, h4, h5, h6 { 
+	text-transform: uppercase; 
+	padding-bottom: 0.5em;
+}
+
+h1 {
+	font-family: $font-title;
+	text-transform: uppercase;	
+	font-size: 27px; font-size: 2.3rem; 
+	padding-bottom: 1em;
+}
+
+h2 { 
+	font-size: 36px; font-size: 3.6rem; 
+	padding-bottom: 0.5em; 
+}
+
+h3 { 
+	font-size: 20px; font-size: 1.8rem; 
+	font-weight: bold;
+	padding-bottom: 1em; 
+	
+	p + & { padding-top: 1em; }
+}
+
+h4 { font-size: 16px; font-size: 1.6rem; }
+
+h5, h6 {
+	font-size: 14px; font-size: 1.4rem;
+	color: lighten($col-text, 20%); 
+}
+
+p { 
+	font-size: 16px; font-size: 1.6rem; 
+	padding-bottom: 1em; 
+}
+
+@media screen and ( min-width: 600px ) {
+	
+	h1 { font-size: 37px; font-size: 3.7rem;  }
+	h2 { font-size: 46px; font-size: 3.5rem; }
+	//h3 { font-size: 30px; font-size: 3rem; }
+}
+
+em { 
+	font-style: italic;  
+}
+
+strong { 
+	font-weight: bold;  
+}
+
+/**
+ * ------------------------------------------------------------------------------------------------- 
+ * Lists
+ * -------------------------------------------------------------------------------------------------
+ */
+
+ul, ol { margin: 0 0 1em 1.5em; }
+ol li { padding: 0.3em 0; }
+
+ul {
+	@include no-bullets();
+	margin: 0;
+	width: 100%;
+	float: left;
+	
+	li {
+		display: block;
+		padding: 0.6em 0.3em;
+		border-bottom: 1px solid $col-border;
+	}
+}
+
+/**
+ * ------------------------------------------------------------------------------------------------- 
+ * Blockquotes
+ * -------------------------------------------------------------------------------------------------
+ */
+
+blockquote { 
+	font-size: 16px; font-size: 1.6rem; 
+	line-height: 1.5; 
+	color: lighten($col-text, 10%); 
+	font-style: italic; 
+
+	margin: 0 0 1em 0; 
+	padding: 1em 1.6em 0 1em; 
+	border-left: 10px solid $col-brand-primary; 
+	background: $col-light;
+	
+	.author { padding-bottom: 0; }
+	
+	cite { 
+		display: block; 
+		font-size: 14px; font-size: 1.4rem;
+		color: $col-text; 
+		
+		&:before { content: "\2014 \0020"; } /* A long hyphen */
+		a, a:visited, a:visited { color: $col-text; }
+	}
+}
+
+/**
+ * ------------------------------------------------------------------------------------------------- 
+ * Other funny tags
+ * -------------------------------------------------------------------------------------------------
+ */
+ 
+sup,
+sub {
+	font-size: 12px; font-size: 1.2rem;
+	font-weight: bold;
+	height: 0;
+	line-height: 1;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup { bottom: 1ex; }
+sub { top: .5ex; }
+
+/**
+ * ------------------------------------------------------------------------------------------------- 
+ * Frowny face on 404
+ * -------------------------------------------------------------------------------------------------
+ */
+
+.frown {
+	font-family: $font-title;
+	width: 7em;
+	height: 7em;
+	margin: 1em auto;
+	padding: 0.5em 0 0 0;
+	background: $col-brand-primary;
+	color: $col-light;
+	@include border-radius(50%);
+	//display: inline-block;
+	text-align: center;
+	
+	p {
+		display: block;
+		font-size: 60px; font-size: 7rem !important;
+		transform:rotate(90deg);
+		line-height: 1;
+		&:last-of-type { margin-top: -0.5em; }
+	}
+}
+
+/**
+ * ------------------------------------------------------------------------------------------------- 
+ * Fancy numbers
+ * SOURCE: http://codeitdown.com/ordered-list-css-styles/
+ * -------------------------------------------------------------------------------------------------
+ */
+
+ol {
+	clear: both;
+	display: block;
+	list-style-type: none;
+	/*list-style-type: decimal !ie; /* IE7 hack */
+	margin: 0;
+	margin-left: 3em;
+	padding: 0;
+	counter-reset: li-counter;
+}
+
+ol li {
+	float: left;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+		
+ol > li{
+	position: relative;
+	margin-bottom: 2em;
+	padding-left: 0.5em;
+	min-height: 3em;
+	border-left: 2px solid $col-light;
+}
+
+ol > li:before {
+	position: absolute;
+	top: 0;
+	left: -1em;
+	width: 0.8em;
+     
+	font-size: 3em;
+	line-height: 1;
+	font-weight: bold; 
+	text-align: right;
+	color: $col-text;
+ 
+	content: counter(li-counter);
+	counter-increment: li-counter;
+}
+
+ol + * { clear: left; }
+
+/**
+ * ------------------------------------------------------------------------------------------------- 
+ * Table
+ * -------------------------------------------------------------------------------------------------
+ */
+
+table {
+	margin: 1.5em 0;
+	
+	tr { border-bottom: 1px solid #ccc; }
+
+	th, td { 
+		text-align: left; 
+		padding: 0.5em 20% 0.5em 0.5em;
+	}
+
+	th {
+		font-weight: 400;
+		font-size: 1.125em;
+	}	
+}

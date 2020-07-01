@@ -1,0 +1,106 @@
+/**
+ * ------------------------------------------------------------------------------------------------- 
+ * Grid
+ * Based on A better Photoshop grid for responsive web design by Elliot Jay Stocks
+ * URL: http://www.elliotjaystocks.com/blog/a-better-photoshop-grid-for-responsive-web-design/
+ * -------------------------------------------------------------------------------------------------
+
+ * CREATING A ROW
+
+	Each row of column blocks sits inside a .row block.
+	A column block inside a .row has a class name like this .columns-[column span]
+	
+	.columns- : to start
+	
+	[column span]	
+		full : 		spanning the full width
+		twothirds : 2/3 of the total width
+		half: 		1/2 of the total width
+		third : 		1/3 of the total width	
+		quarter : 	1/4 of the total width
+		fifth : 		1/5 of the total width
+		sixth : 		1/6 of the total width
+		seventh : 	1/7 of the total width
+		eigth : 		1/8 of the total width
+		 
+ * GUTTERS
+
+	Gutters for the row are added to the right of the column block, except for the last block in the row.
+	The gutters take a fixed width set in %. 
+
+	To have gutters on the outside of the columns you need to add .padded-row to .row  
+
+ * PUSH RIGHT
+ 
+ 	All .columns-* float left by default. 
+ 	
+ 	If you want to align one to the right you need to add a class .push-right to the column block.
+ 	The block with .push-right does not have to be the last block in the markup. 
+ 	
+ 	You should only use one .push-right in a row. Otherwise you're columns will be kissing. 
+ 	But then maybe you might like that.
+ 	
+ * CENTERED
+ 
+ 	You can center a column in the middle of a .row by adding .centered to the .columns-* class.
+ 	Again, only one per row please.
+
+*/
+
+.row {
+	clear: both;
+	margin: 0;
+	display: block;
+	position: relative;
+	
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	
+	&.padded-row { margin: 0 2% 0 2%; }
+}
+
+/*
+.push-right {
+	float: right;
+	margin-right: 0;
+	display: inline-block;
+}
+*/
+
+[class*='columns-'] {
+	float: left;
+	margin:0 2% 2% 0; 
+	//padding: 0.5em 1em 0 1em;
+
+	.row &:last-of-type { margin-right: 0; }
+		
+	&.push-right {
+		float: right;
+		margin-right: 0;
+	}
+	
+	/* 
+	Mobile first: Default 100% width for all.
+	Override this for the narrow columns immediately
+	and for wider columns with media queries
+	*/
+	width: 100%;
+}
+
+@media screen and ( min-width: 800px ) {
+
+	.columns-quarter { width: 23.5%; }
+	.columns-quarter:nth-of-type(4n) { margin-right: 0; }
+	.columns-quarter:nth-of-type(4n+5) { clear: left; }
+
+	.columns-half { 
+		width: 49%; 
+		.row &:nth-of-type(even) { margin-right: 0; }
+	}
+
+	.columns-twothirds { width:  66%; } 
+	.columns-threequarters { width: 74.5%; } 
+}
