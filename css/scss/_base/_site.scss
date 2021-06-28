@@ -26,12 +26,12 @@ body > * {
 
     .hide { display: none; }
     
+}
+
     section:empty {
         height: 0;
         display: none;
     }
-}
-
 
 
 body::after {

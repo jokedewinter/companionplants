@@ -7,43 +7,30 @@
 
 @media screen and ( min-width: 48em ) {
     
-    #show-menu {
-        display: none;
-    }
-    
+    #show-menu { display: none; }
+    nav a { height: 48px; }
     
     body:not(.home) {
-        
         display: grid;
-        grid-template-columns: 1fr 1fr 2fr;
         grid-template-columns: 25vw 25vw 50vw;
-        /*grid-auto-rows: minmax(100px, auto);*/
-        grid-template-areas:
-            "menu choose result"
-            "footer footer footer";
-        
     }
     
-    body:not(.home) > * {
-        align-self: flex-start;
-    }
-    #menu { grid-area: menu; }
-    #list, 
-    #letters { grid-area: choose; }
+    body:not(.home) > * { align-self: flex-start; }
     
-    #list {
-    grid-row: 1; 
-    }
+	#menu { grid-column: 1 / 2; }
+    #list { grid-column: 2 / 3; }
+    #letters { grid-column: 2 / 3; }
+    #result { grid-column: 3 / 4; }
     
-    #letters {
-    grid-row: 2; 
-    }
-    #result { grid-area: result; }
-    footer { 
-  grid-area: footer;  
-    grid-row: 3; 
-    
-    }
-    
+    #list { grid-row: 1 / span 1; }
+    footer { grid-row: 3; }
 
+    #list, 
+    #letters,
+    #list > article { padding-top: 48px; }
+    
+    #result { padding-top: 70px; }
+    
+   	.scrollbar { grid-template-columns: repeat(2, 1fr); }
+	.scrollbar article { column-width: 100px; }
 }

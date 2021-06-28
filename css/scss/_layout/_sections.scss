@@ -17,36 +17,41 @@
     overflow-y: auto;
     margin: 0 auto;
 }
-          
-.scrollbar article{
+	          
+.scrollbar article {
     column-width: 32vw;
     column-fill: auto;
     height: 100%;
     display: inline-block;
     padding-top: 1.5em;
 }
-
+	
 .scrollbar article h3 { column-span: all; }
-
+	
 .scrollbar li {
     break-inside: avoid;
     padding: 0.3em 0;
     border-bottom: 1px dashed var(--col-border);
 }
 
-.scrollbar, 
-.scrollbar article { transform: rotateX(180deg); }
-          
-.scrollbar::-webkit-scrollbar {
-    width: 5px;
-    height: 3px;
-}
-      
-.scrollbar::-webkit-scrollbar-track { 
-    -webkit-box-shadow: inset 0 0 6px var(--col-border) !important; 
-    background: var(--col-border); 
-}  // The track
 
-.scrollbar::-webkit-scrollbar-thumb { background: var(--col-text-reverse); }    // The handle
-.scrollbar::-webkit-scrollbar-thumb:hover { background: var(--col-theme); }    // The handle on hover
-.scrollbar::-webkit-scrollbar:vertical { display: none; }
+@media screen and ( max-width: 47.99em ) {
+
+	
+	.scrollbar, 
+	.scrollbar article { transform: rotateX(180deg); }
+	          
+	.scrollbar::-webkit-scrollbar {
+	    width: 5px;
+	    height: 3px;
+	}
+	      
+	.scrollbar::-webkit-scrollbar-track { 
+	    -webkit-box-shadow: inset 0 0 6px var(--col-border) !important; 
+	    background: var(--col-border); 
+	}  // The track
+	
+	.scrollbar::-webkit-scrollbar-thumb { background: var(--col-text-reverse); }    // The handle
+	.scrollbar::-webkit-scrollbar-thumb:hover { background: var(--col-theme); }    // The handle on hover
+	.scrollbar::-webkit-scrollbar:vertical { display: none; }
+}
