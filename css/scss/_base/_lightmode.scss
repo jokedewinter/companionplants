@@ -1,0 +1,54 @@
+/**
+ * ------------------------------------------------------------- 
+ * Light mode
+ * ------------------------------------------------------------- */
+
+@media screen and (prefers-color-scheme: light) {
+  
+	.light-mode {
+		background-color: var(--col-page-light);
+		color: var(--col-text);    
+	}
+}
+
+.light-mode { background-color: var(--col-page-light); }
+.light-mode::after { background-image: url('../images/leaves-bg-light.svg'); }
+
+
+.light-mode,
+.light-mode button { color: var(--col-text); }
+
+.light-mode #letters button {
+	background-color: var(--col-page-dark);
+	color: var(--col-text-reverse);    
+}
+
+nav button,
+#list button { border: 1px dashed var(--col-border-light); }
+
+.scrollbar li { border-bottom: 1px dashed var(--col-border-light); }
+
+
+/**
+ * ------------------------------------------------------------- 
+ * Light mode button
+ * ------------------------------------------------------------- */
+
+#theme {
+    @include font-size(16);
+    color: var(--col-text-reverse);
+}
+
+#theme::before {
+	content: "";
+	background-color: #fff;
+	width: 20px;
+	height: 20px;
+	border-radius: 20px;
+	display: inline-block;
+	margin-right: 0.5em;
+	margin-bottom: -0.2em;
+}
+
+.light-mode #theme { color: var(--col-text); }
+.light-mode #theme::before { background-color: #000; }

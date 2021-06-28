@@ -65,6 +65,7 @@ var menu_btn = document.getElementById('show-menu');
 var list_btn = document.getElementById('alphabetical'); 
 var letter_btn = document.getElementById('letter'); 
 var random_btn = document.getElementById('random'); 
+var theme_btn = document.getElementById('theme'); 
 
 menu_btn.onclick = function() { 
     empty_results(); 
@@ -83,6 +84,11 @@ letter_btn.onclick = function() {
 random_btn.onclick = function() { 
     empty_results(); 
     random(); 
+}
+
+theme_btn.onclick = function() { 
+   var element = document.body;
+   element.classList.toggle("light-mode");
 }
 
 

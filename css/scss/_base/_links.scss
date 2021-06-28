@@ -23,14 +23,15 @@ a {
  * Buttons
  * ------------------------------------------------------------- */
 
+	
 button {
-	font-family: var(--font-body);
     @include font-size(18);
 	margin: 0 0.5em 0.5em 0;
     padding: 0.2em 1em;    
     color: var(--col-text-reverse);
 }
 
+button { font-family: var(--font-body); }
 button:hover { background-color: var(--col-theme) !important; }
 
 
@@ -47,3 +48,4 @@ button:hover { background-color: var(--col-theme) !important; }
 
 nav button,
 #list button { border: 1px dashed var(--col-border); }
+
