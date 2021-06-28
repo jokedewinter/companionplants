@@ -1,90 +1,20 @@
 <!DOCTYPE html>
-<html class="no-js jquery">
+<html class="no-js" lang="en">
 <head>
 	<title>Companion plants</title>
 
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+    <meta name="description" content="Which plants are best friends? And which plants are always falling out with each other?"/>
 	<link rel="stylesheet" href="css/screen.min.css">
-	
-	<script>WebFontConfig={google:{families:["Open+Sans:300,600:latin","Montserrat::latin"]}},function(){var t=document.createElement("script");t.src=("https:"==document.location.protocol?"https":"http")+"://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js",t.type="text/javascript",t.async="true";var e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)}();</script>
-	
-  	<script>document.documentElement.className = document.documentElement.className.replace("no-js","js");</script>
-	<!--[if lt IE 9]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+  	<link rel="icon" type="image/ico" href="favicon.ico" />
 </head>
 
-<body>
+<body class="home">
 
-<div class="wrapper">
-	<header id="masthead" role="banner">
-		<h1>Companion plants</h1>
-	</header>
-	
-	<div class="row">
-	<main id="main" role="main" class="columns-threequarters push-right">
-		<section id="search_result" class="columns-half push-right">
-			<h2></h2>
-			<article id="like">
-				<h4>Like</h4>
-			</article>
-	
-			<article id="dislike">
-				<h4>Doesn't like</h4>
-			</article>
-		</section>
-
-		<div class="columns-half">
-			<section id="search_list" class="method">
-				<h3>Alphabetical list</h3>
-				<ul class="columns"></ul>
-			</section>	
-	
-			<section id="search_letter" class="method">
-				<h3>Search by first letter</h3>
-				<article id="search_letter-plants">
-				</article>
-				<ul id="letters"></ul>
-			</section>	
-	
-			<section id="search_name" class="method">
-				<h3>Search by name</h3>
-				<form id="ask_plant_name" method="post" action="#">
-					<label for="plant_name">Type a plant name</label>
-					<input type="text" id="plant_name" name="plant_name" value="">
-					<input type="submit" id="plant_submit" name="plant_submit" value="Find" />
-					<p id="not_found"></p>
-					<ul id="lookingfor"></ul>
-				</form>
-			</section>
-		</div>
-	</main>
-
-	<nav id="search_method" class="columns-quarter">	
-		<h3>Search method</h3>
-		<ul>
-			<li><a href="#search_list">Alphabetical</a></li>
-			<li><a href="#search_letter">First letter</a></li>
-			<li><a href="#search_name">Plant name</a></li>
-			<li><a href="#search_random">Surprise me</a></li>
-		</ul>		
-	</nav>
-	</div><!-- /.row -->
-	
-</div><!-- /.wrapper -->
-
-<footer id="colophon" role="contentinfo">
-	<div class="wrapper">
-		<p>&copy; 2015</p>
-		<p class="jokedewinter"><a href="http://www.jokedewinter.co.uk">Made by Joke De Winter</a></p>
-	</div>
-</footer>
-
-<script src="js/jquery-1.11.1.min.js"></script>
-<!--<script src="js/jquery.lookingfor.min.js"></script>-->
-<script src="js/companion.min.js"></script>
-
+    <h1>Companion plants</h1>
+    <p>Which plants are best friends? And which plants are always falling out with each other?</p>
+    <a class="button" href="search.html">Search the list</a>
+    
 </body>
 </html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<title>Search | Companion plants</title>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Which plants are best friends? And which plants are always falling out with each other?"/>
+	<link rel="stylesheet" href="css/screen.min.css">
+  	<link rel="icon" type="image/ico" href="favicon.ico" />
+</head>
+
+<body>
+
+    <a id="show-menu" class="hide" href="#menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><g fill="#98C268" fill-rule="evenodd" stroke="none" stroke-width="1"><path d="M8 10H23.529V12.118H8z"/><path d="M8 14.941H23.529V17.059H8z"/><path d="M8 19.882H23.529V22H8z"/></g></svg>
+        <span class="screen-reader-text">Search menu</span>
+    </a> 
+
+    <nav id="menu">
+        <a href="index.html">
+            <svg width="39" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M8.938 18a.809.809 0 01-.575-.239L.238 9.58A.832.832 0 01.236 8.42L8.361.24A.806.806 0 018.937 0a.8.8 0 01.575.24.823.823 0 010 1.157L2.775 8.182h35.413c.448 0 .812.366.812.818a.816.816 0 01-.812.818H2.775l6.737 6.785a.823.823 0 010 1.156.8.8 0 01-.574.241z" fill="#98C268" fill-rule="nonzero"/></svg>
+            <span class="screen-reader-text">Back to home screen</span>
+        </a> 
+        
+        <h1><span>Search</span> Companion Plants</h1>
+    	<button id="alphabetical">Alphabetical</button>
+    	<button id="letter">First Letter</button>
+    	<button id="random">Random</button>
+    </nav>
+    
+    <section id="result"></section>
+    <section id="list"></section>
+    <section id="letters"></section>
+
+    <footer>
+    	<p>&copy; 2021 | <a href="http://www.jokedewinter.co.uk">Made by Joke De Winter</a></p>
+    </footer>
+    
+    <script src="js/companions.json"></script>
+    <script src="js/engine.js"></script>
+
+</body>
+</html>

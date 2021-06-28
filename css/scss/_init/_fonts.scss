@@ -1,0 +1,41 @@
+/**
+ * -------------------------------------------------------- 
+ * Typeface: Six Caps
+ * -------------------------------------------------------- */
+
+@font-face {
+  font-family: 'Six Caps';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Six Caps'), local('Six Caps-Regular'),
+       url('../fonts/six-caps/six-caps-regular.woff2') format('woff2'),
+       url('../fonts/six-caps/six-caps-regular.woff') format('woff');
+}
+
+
+/**
+ * -------------------------------------------------------- 
+ * Typeface: Mukta
+ * -------------------------------------------------------- */
+
+@font-face {
+  font-family: 'Mukta';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Mukta'), local('Mukta-Regular'),
+       url('../fonts/mukta/mukta-regular.woff2') format('woff2'),
+       url('../fonts/mukta/mukta-regular.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Mukta';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Mukta Bold'), local('Mukta-Bold'),
+       url('../fonts/mukta/mukta-700.woff2') format('woff2'),
+       url('../fonts/mukta/mukta-700.woff') format('woff');
+}

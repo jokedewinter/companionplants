@@ -1,82 +1,21 @@
 /*
-Theme Name: Cronofy 2015
+Project: Companion Plants
+Project URI: https://jokedewinter.github.io/companionplants
 Author: Joke De Winter Ltd
-Author URI: http://www.jokedewinter.co.uk
-Description: Custom WordPress theme for Cronofy.
-Version: 1.0
-Text Domain: cronofy
+Author URI: https://www.jokedewinter.co.uk
+Description: A little website to help you with keeping your plants happy
+Version: 2.0
 */
 
-/**
- * ------------------------------------------------------------------------------------------------- 
- * Base Styles
- * -------------------------------------------------------------------------------------------------
- */
+@import "_init/_mixins";
+@import "_init/_reset";
+@import "_init/_fonts";
+@import "_init/_root";
 
-@import "init/_reset";
-@import "init/_colours";
-@import "init/_mixins";
-@import "init/_fonts";
+@import "_base/_site";
+@import "_base/_typography";
+@import "_base/_links";
 
-* { 
-	-moz-box-sizing: border-box; 
-	-webkit-box-sizing: border-box; 
-	box-sizing: border-box; 
-	-webkit-text-size-adjust: auto; 
-}
-
-html {
-	font-size: 62.5%;
-	overflow-x: hidden;
-}
-
-body { 
-	font-family: $font-body;
-	font-size: 16px; font-size: 1.6rem;
-	text-align: center; 
-	line-height: 1.5; 
-	background: $col-page;
-	color: $col-text; 	
-	overflow-x: hidden;
-}
-
-.hide {
-	/* A little bit of naughtyness */
-	display: none;
-}
-
-@import "base/_typography";
-@import "base/_links";
-@import "base/_images";
-@import "base/_forms";
-@import "base/_grid";
-
-/**
- * ------------------------------------------------------------------------------------------------- 
- * Layout Styles
- * -------------------------------------------------------------------------------------------------
- */
-
-.wrapper {
-	width: 90%;
-	//max-width: 64em;
-	margin: 0 auto;
-	text-align: left;
-}
-
-#masthead, #main, #colophon {
-	position: relative;
-	z-index: 100;
-}
-
-@import "layout/_header";
-@import "layout/_footer";
-
-/**
- * ------------------------------------------------------------------------------------------------- 
- * Module Styles
- * -------------------------------------------------------------------------------------------------
- */
-
-@import "modules/_companion-js";
-@import "modules/_companion-php";
+@import "_layout/_home";
+@import "_layout/_nav";
+@import "_layout/_sections";

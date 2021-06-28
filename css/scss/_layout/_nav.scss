@@ -1,0 +1,16 @@
+/**
+ * ------------------------------------------------------------- 
+ * Nav
+ * ------------------------------------------------------------- */
+
+nav {
+    display: grid;
+    grid-auto-rows: minmax(48px, auto);
+}
+
+nav a { height: 90px; }
+
+#show-menu:not(.hide) {
+    display: block;
+    height: 3em;
+}

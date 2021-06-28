@@ -1,0 +1,35 @@
+/**
+ * ------------------------------------------------------------- 
+ * Typography
+ * ------------------------------------------------------------- */
+
+h1, h2 {
+    font-family: var(--font-title);
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    margin-bottom: 0.5em; 
+}
+
+h1 { @include font-size(72); }
+h2 { @include font-size(48); }
+
+h1 span {
+    font-family: var(--font-body);
+    @include font-size(16);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    color: var(--col-theme);
+}
+
+h3 {
+    @include font-size(16);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 0.5em;
+}
+
+span { font-weight: normal; }
+footer p { @include font-size(14); }

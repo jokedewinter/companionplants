@@ -1,0 +1,63 @@
+/**
+ * -------------------------------------------------------- 
+ * Reset
+ * -------------------------------------------------------- */
+
+* { 
+	margin: 0;
+	padding: 0;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+	-webkit-text-size-adjust: 100%; 
+}
+
+footer, 
+header, 
+nav, 
+section { display: block; }
+
+button {
+	background: none;
+	border: none;
+	border-radius: 0px;
+	outline: 0;
+	-webkit-appearance: none;
+}
+
+ul { @include no-bullets(); } 
+
+
+/**
+ * -------------------------------------------------------------
+ * Accessibility
+ * ------------------------------------------------------------- */
+
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	overflow: hidden;
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+}
+
+.screen-reader-text:focus {
+	clip: auto;
+	display: block;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	height: auto;
+	line-height: normal;
+	padding: 0.7em 2em;
+	position: absolute;
+	left: 0.5em;
+	top: 0.5em;
+	text-decoration: none;
+	width: auto;
+	z-index: 100000;
+	border-bottom: none;
+}

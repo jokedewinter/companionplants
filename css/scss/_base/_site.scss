@@ -1,0 +1,62 @@
+/**
+ * ------------------------------------------------------------- 
+ * Site settings
+ * ------------------------------------------------------------- */
+
+html { font-size: 62.5%; }
+
+body {
+    min-height: 100vh;
+    padding-top: 2em;
+	font-family: var(--font-body);
+	@include font-size(18);
+	line-height: 1.5;
+	background-color: var(--col-page-dark);
+	color: var(--col-text-reverse);    
+}
+
+body > * {
+    width:85%; 
+    margin: 0 auto;
+    position: relative;
+    z-index: 100;
+}
+
+.hide { display: none; }
+
+section:empty {
+    height: 0;
+    display: none;
+}
+
+
+body::after {
+    content: "";
+    background-image: url('../images/leaves-bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+body:not(.home)::before {
+    content: "";
+    background-image: url('../images/leaves-icon.svg');
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 1em;
+    right: 0.7em;
+    z-index: 100;
+}
+
+
+footer { 
+    padding: 2em 0 1em 0; 	
+    align-self: flex-end;
+}
