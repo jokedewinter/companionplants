@@ -28,6 +28,12 @@
 
 .scrollbar article h3 { column-span: all; }
 
+.scrollbar li {
+    break-inside: avoid;
+    padding: 0.3em 0;
+    border-bottom: 1px dashed var(--col-border);
+}
+
 .scrollbar, 
 .scrollbar article { transform: rotateX(180deg); }
           
