@@ -10,7 +10,10 @@ nav {
 
 nav a { height: 90px; }
 
-#show-menu:not(.hide) {
-    display: block;
-    height: 3em;
+@media screen and ( max-width: 47.99em ) {
+
+    #show-menu:not(.hide) {
+        display: block;
+        height: 3em;
+    }
 }

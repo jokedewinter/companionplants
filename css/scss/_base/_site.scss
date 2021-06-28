@@ -22,12 +22,16 @@ body > * {
     z-index: 100;
 }
 
-.hide { display: none; }
+@media screen and ( max-width: 47.99em ) {
 
-section:empty {
-    height: 0;
-    display: none;
+    .hide { display: none; }
+    
+    section:empty {
+        height: 0;
+        display: none;
+    }
 }
+
 
 
 body::after {

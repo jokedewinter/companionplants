@@ -1,0 +1,49 @@
+/**
+ * ------------------------------------------------------------- 
+ * Desktop layout
+ * Only hides the menu button.
+ * The rest is displayed in columns
+ * ------------------------------------------------------------- */
+
+@media screen and ( min-width: 48em ) {
+    
+    #show-menu {
+        display: none;
+    }
+    
+    
+    body:not(.home) {
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr;
+        grid-template-columns: 25vw 25vw 50vw;
+        /*grid-auto-rows: minmax(100px, auto);*/
+        grid-template-areas:
+            "menu choose result"
+            "footer footer footer";
+        
+    }
+    
+    body:not(.home) > * {
+        align-self: flex-start;
+    }
+    #menu { grid-area: menu; }
+    #list, 
+    #letters { grid-area: choose; }
+    
+    #list {
+    grid-row: 1; 
+    }
+    
+    #letters {
+    grid-row: 2; 
+    }
+    #result { grid-area: result; }
+    footer { 
+  grid-area: footer;  
+    grid-row: 3; 
+    
+    }
+    
+
+}
