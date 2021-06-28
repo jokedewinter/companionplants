@@ -37,7 +37,10 @@ nav button,
 #theme {
     @include font-size(16);
     color: var(--col-text-reverse);
+    padding: 0;
 }
+
+#theme:hover { background-color: transparent; }
 
 #theme::before {
 	content: "";
