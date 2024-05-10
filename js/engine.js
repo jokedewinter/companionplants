@@ -244,7 +244,7 @@ function show_result(chosen) {
                 }
                 result.push('</ul>');
             } else {
-                result.push('<p class="none">No ' + title[i] + ' companions</p>');            
+                result.push('<p class="none">No known ' + title[i] + ' companions</p>');            
             }
             
             result.push('</article>');

@@ -1,8 +1,12 @@
 var companions = [{
+    "Amaranth": {
+        "type": "",
+        "+": ["Aubergine","Cucumber","Pea","Pepper","Potato","Runner Bean","Sweet Corn","Tomato"] },
+    },{
     "Angelica": {
         "type": "",
         "+": ["Parsley"],
-        "-": ["Celery"]},
+        "-": ["Celery"] },
     },{
     "Anise": {
         "type": "",
@@ -31,7 +35,7 @@ var companions = [{
     },{
     "Aubergine": {
         "type": "Solanaceae",
-        "+": ["Climbing Bean","Dwarf Bean","Ginger","Lemon Balm","Lettuce","Marigold","Mint","Pea","Pepper","Potato","Radish","Runner Bean","Tarragon","Tomato","Thyme"],
+        "+": ["Amaranth","Climbing Bean","Dwarf Bean","Ginger","Lemon Balm","Lettuce","Marigold","Mint","Pea","Pepper","Potato","Radish","Runner Bean","Tarragon","Tomato","Thyme"],
         "-": ["Fig","Garlic","Kiwi","Onion","Pomegranate"] },
     },{
     "Basil": {
@@ -162,7 +166,7 @@ var companions = [{
     },{
     "Cucumber": {
         "type": "Cucurbit",
-        "+": ["Beetroot","Broad Bean","Borage","Broccoli","Brussels Sprouts","Cabbage","Carrot","Cauliflower","Celeriac","Celery","Chamomile","Chinese Cabbage","Climbing Bean","Cumin","Dill","Dwarf Bean","Garlic","Horseradish","Kale","Kohlrabi","Lettuce","Lovage","Marigold","Mustard","Nasturtium","Onion","Oregano","Pea","Pear","Radish","Sunflower","Sweet Corn","Tansy","Tomato","Yarrow"],
+        "+": ["Amaranth","Beetroot","Broad Bean","Borage","Broccoli","Brussels Sprouts","Cabbage","Carrot","Cauliflower","Celeriac","Celery","Chamomile","Chinese Cabbage","Climbing Bean","Cumin","Dill","Dwarf Bean","Garlic","Horseradish","Kale","Kohlrabi","Lettuce","Lovage","Marigold","Mustard","Nasturtium","Onion","Oregano","Pea","Pear","Radish","Sunflower","Sweet Corn","Tansy","Tomato","Yarrow"],
         "-": ["Marjoram","Melon","Potato","Rosemary","Sage","Thyme"]},
     },{
     "Cumin": {
@@ -374,7 +378,7 @@ var companions = [{
     },{
     "Pea": {
         "type": "Legume",
-        "+": ["Aubergine","Broad Bean","Broccoli","Brussels Sprouts","Cabbage","Carrot","Cauliflower","Caraway","Chamomile","Climbing Bean","Courgette","Cucumber","Dwarf Bean","Grape","Kale","Kohlrabi","Lettuce","Marigold","Mint","Pak Choi","Pepper","Potato","Radish","Runner Bean","Spinach","Swede","Sweet Corn","Sweet Potato","Thyme","Tomato","Turnip"],
+        "+": ["Amaranth","Aubergine","Broad Bean","Broccoli","Brussels Sprouts","Cabbage","Carrot","Cauliflower","Caraway","Chamomile","Climbing Bean","Courgette","Cucumber","Dwarf Bean","Grape","Kale","Kohlrabi","Lettuce","Marigold","Mint","Pak Choi","Pepper","Potato","Radish","Runner Bean","Spinach","Swede","Sweet Corn","Sweet Potato","Thyme","Tomato","Turnip"],
         "-": ["Artichoke","Chive","Cumin","Garlic","Horseradish","Leek","Onion","Melon","Raspberry"]},
     },{
     "Peach": {
@@ -392,7 +396,7 @@ var companions = [{
     },{
     "Pepper": {
         "type": "Solanaceae",
-        "+": ["Aubergine","Basil","Carrot","Garlic","Lemongrass","Marigold","Onion","Oregano","Tomato"],
+        "+": ["Amaranth","Aubergine","Basil","Carrot","Garlic","Lemongrass","Marigold","Onion","Oregano","Tomato"],
         "-": ["Apricot","Bean","Broccoli","Cabbage","Kale","Kohlrabi","Parsnip","Potato"]},
     },{
     "Pineapple": {
@@ -412,7 +416,7 @@ var companions = [{
     },{
     "Potato": {
         "type": "Solanaceae",
-        "+": ["Aubergine","Broad Bean","Broccoli","Brussels Sprouts","Cabbage","Cauliflower","Celery","Chamomile","Chinese Cabbage","Climbing Bean","Cumin","Dwarf Bean","Flax","Foxglove","Hemp","Horseradish","Kale","Kohlrabi","Lavender","Lemon Balm","Lettuce","Marigold","Marjoram","Mint","Nasturtium","Parsley","Passion Fruit","Pea","Radish","Spinach","Strawberry","Summer Savory","Swede","Sweet Corn","Tarragon","Thyme","Turnip","Valerian"],
+        "+": ["Amaranth","Aubergine","Broad Bean","Broccoli","Brussels Sprouts","Cabbage","Cauliflower","Celery","Chamomile","Chinese Cabbage","Climbing Bean","Cumin","Dwarf Bean","Flax","Foxglove","Hemp","Horseradish","Kale","Kohlrabi","Lavender","Lemon Balm","Lettuce","Marigold","Marjoram","Mint","Nasturtium","Parsley","Passion Fruit","Pea","Radish","Spinach","Strawberry","Summer Savory","Swede","Sweet Corn","Tarragon","Thyme","Turnip","Valerian"],
         "-": ["Apple","Apricot","Asparagus","Carrot","Courgette","Cucumber","Grape","Melon","Nectarine","Oregano","Pepper","Pumpkin","Raspberry","Squash","Sunflower","Tomato"]},
     },{
     "Pumpkin": {
@@ -450,7 +454,7 @@ var companions = [{
     },{
     "Runner Bean": {
         "type": "Legume",
-        "+": ["Aubergine","Celeriac","Celery","Marigold","Marjoram","Pea","Radish","Rosemary","Strawberry","Summer Savory","Sweet Corn","Winter Savory"],
+        "+": ["Amaranth","Aubergine","Celeriac","Celery","Marigold","Marjoram","Pea","Radish","Rosemary","Strawberry","Summer Savory","Sweet Corn","Winter Savory"],
         "-": ["Beetroot","Broccoli","Brussels Sprouts","Cabbage","Cauliflower","Chive","Garlic","Grape","Horseradish","Kohlrabi","Leek","Nasturtium","Onion","Swede"]},
     },{
     "Sage": {
@@ -513,7 +517,7 @@ var companions = [{
     },{
     "Sweet Corn": {
         "type": "",
-        "+": ["Broad Bean","Brussels Sprouts","Chinese Cabbage","Climbing Bean","Courgette","Cucumber","Dill","Dwarf Bean","Lettuce","Melon","Morning Glory","Mustard","Nectarine","Parsley","Pea","Peach","Pear","Potato","Pumpkin","Runner Bean","Spinach","Squash","Sweet Potato","Sunflower","Yarrow"],
+        "+": ["Amaranth","Broad Bean","Brussels Sprouts","Chinese Cabbage","Climbing Bean","Courgette","Cucumber","Dill","Dwarf Bean","Lettuce","Melon","Morning Glory","Mustard","Nectarine","Parsley","Pea","Peach","Pear","Potato","Pumpkin","Runner Bean","Spinach","Squash","Sweet Potato","Sunflower","Yarrow"],
         "-": ["Celeriac","Celery","Tomato"]},
     },{
     "Sweet Pea": {
@@ -542,7 +546,7 @@ var companions = [{
     },{
     "Tomato": {
         "type": "Solanaceae",
-        "+": ["Asparagus","Artichoke","Aubergine","Basil","Borage","Carrot","Celeriac","Celery","Chive","Coriander","Cucumber","Dill","Dwarf Bean","Foxglove","Garlic","Gooseberry","Horehound","Horseradish","Kale","Lavender","Lemon Balm","Lemongrass","Lettuce","Marigold","Mint","Nasturtium","Onion","Parsley","Pea","Pepper","Rosemary","Rose","Sage","Sorrel","Spinach","Squash"],
+        "+": ["Amaranth","Asparagus","Artichoke","Aubergine","Basil","Borage","Carrot","Celeriac","Celery","Chive","Coriander","Cucumber","Dill","Dwarf Bean","Foxglove","Garlic","Gooseberry","Horehound","Horseradish","Kale","Lavender","Lemon Balm","Lemongrass","Lettuce","Marigold","Mint","Nasturtium","Onion","Parsley","Pea","Pepper","Rosemary","Rose","Sage","Sorrel","Spinach","Squash"],
         "-": ["Apricot","Beetroot","Blackberry","Broccoli","Brussels Sprouts","Cabbage","Cape Goosberry","Caraway","Cauliflower","Fennel","Kohlrabi","Potato","Southernwood","Sweet Corn"]},
     },{
     "Turnip": {
