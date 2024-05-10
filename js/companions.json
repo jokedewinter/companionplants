@@ -180,7 +180,7 @@ var companions = [{
     },{
     "Dill": {
         "type": "Root",
-        "+": ["Anise","Asparagus","Broccoli","Brussels Sprouts","Cabbage","Carrot","Cauliflower","Celery","Citrus","Coriander","Cucumber","Kale","Kohlrabi","Leek","Onion","Radish","Spinach","Sweet Corn","Tomato"],
+        "+": ["Anise","Asparagus","Broccoli","Brussels Sprouts","Cabbage","Cauliflower","Celery","Citrus","Coriander","Cucumber","Kale","Kohlrabi","Leek","Onion","Radish","Spinach","Sweet Corn","Tomato"],
         "-": ["Carrot","Mint"]},
     },{
     "Dwarf Bean": {
